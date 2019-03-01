@@ -1,3 +1,6 @@
+html{
+	min-height: 100%
+}
 .card{
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -8,7 +11,8 @@ height: 30vh;
 object-fit: cover;
 }
 body{
-	background-image: url(https://ak8.picdn.net/shutterstock/videos/17178688/thumb/1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: url(https://ae01.alicdn.com/kf/HTB1uWloFrSYBuNjSspiq6xNzpXa5/Laeacco-Jungle-Party-Baby-Cartoon-Animals-Bear-Giraffe-Photography-Background-Customized-Photographic-Backdrops-For-Photo-Studio.jpg_q50.jpg) no-repeat;
+	background-size: 100%;
+    background-position: bottom;
+	min-height: 100%;
 }
