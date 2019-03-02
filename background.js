@@ -1,4 +1,4 @@
-var counter = 0;
+var counter = 1;
 function changeBG(){
     var imgs = [
         "url(https://wallpapermemory.com/uploads/786/tiger-wallpaper-hd-1080p-115616.jpg)",
