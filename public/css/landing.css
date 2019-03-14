@@ -2,9 +2,9 @@ body {
     background: url(https://wallpapermemory.com/uploads/786/tiger-wallpaper-hd-1080p-115616.jpg);
     background-size: cover;
     background-position: center; 
-    transition: background 1.5s linear;
+    transition: background 1s linear;
     -webkit-backface-visibility: hidden;
-    -webkit-transition: background-image 1.5s linear;
+    -webkit-transition: background-image 1s linear;
     -webkit-transform:translate3d(0,0,0);
 }
 .bg {
