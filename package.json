@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/victoryvivek/vertebrates#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "mongoose": "^5.4.20",
-    "express-handlebars": "^3.0.2",
     "body-parser": "^1.18.3",
-    "nodemon": "^1.18.10"
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mongoose": "^5.4.20",
+    "nodemon": "^1.19.1"
   },
   "devDependencies": {},
   "description": ""
