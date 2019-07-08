@@ -11,4 +11,5 @@ var vertebrateSchema = new mongoose.Schema( {
     }
 });
 
-mongoose.model("Vertebrate", vertebrateSchema);
+var vertebrate=mongoose.model("Vertebrate", vertebrateSchema);
+module.exports=vertebrate

@@ -18,10 +18,12 @@
   "homepage": "https://github.com/victoryvivek/vertebrates#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mongoose": "^5.4.20",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {},
   "description": ""

@@ -1,8 +1,12 @@
 const express = require('express');
 var router = express.Router();
 const mongoose=require('mongoose');
+const vertebrate1=require('../models/vertebrate.model.js')
 const Vertebrate=mongoose.model('Vertebrate');
 const bodyparser = require('body-parser');
+var request = require('request');
+var cheerio = require('cheerio');
+const htt=require('http');
 router.use(bodyparser.urlencoded({
     extended : true
 }));
@@ -84,26 +88,42 @@ router.get('/home/bird',(req,res)=> {
 });
 
 router.post('/am',(req,res)=> {
-    res.redirect('../../vertebrate/home/amphibians/am');
+   // console.log(req.body.ver);
+    //console.log(req.body.time);
+    retrieve(req,res);
+    //res.redirect('../../vertebrate/home/amphibians/am');
 });
 
 function retrieve(req,res) {
     //var vertebrate=new Vertebrate();
-    //x=req.body.name;
-    //y=req.body.time;
-    console.log(req.body.name);
-    console.log(req.body.name);/*
-    if(x=="frog")
+    x=req.body.ver;
+    y=req.body.time;
+    console.log(x);
+    console.log(y);
+    if(x=="Frog")
     {
         if(y=="1500-1600")
         {
-            res.redirect('../../vertebrate/am');
+           vertebrate1.findOne({'name':x,'time':y},'description',function(err,vertebrate12) {
+                console.log(vertebrate12.description);
+                
+           });
+           //res.redirect('../../vertebrate/home/amphibians/am');
+           // res.json(VertebrateDB.vertebrates.find({name:"Frog"},{time:"1500-1600"}));
         }
-    }*/
+        else if(y=="1600-1700")
+        {
+            vertebrate1.findOne({'name':x,'time':y},'description',function(err,vertebrate12) {
+                if(err)
+                    console.log("not successful");
+                else
+                    res.json(vertebrate12.description);
+           });
+        }
+    }
 }
 router.get('/home/amphibians/am',(req,res)=> {
-    res.json("hi");
-    console.log(req.body.time);
+    res.json("hi")
 });
 router.get('/list',(req,res)=> {
     //res.json("from list");
